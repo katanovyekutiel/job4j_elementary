@@ -2,7 +2,9 @@ package ru.job4j.ru.job4j.calculator.ru.job4j;
 
 public class SqArea {
     public static double square(double p, double k) {
-        double rsl = -1;
+        double h = p / (2 * (k + 1));
+        double L = h * k;
+        double rsl = L * h;
         return rsl;
     }
 
