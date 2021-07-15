@@ -23,4 +23,5 @@ public class MathCalculator {
         System.out.println("Результат суммы всех четырех операций: "
                 + sumAndMultiplyAndDifferenceAndDivision(10, 20));
     }
+
 }
