@@ -17,4 +17,5 @@ public class FactorialTest {
         int expected = 1;
         Assert.assertEquals(expected, result);
     }
+
 }
