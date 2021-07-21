@@ -6,7 +6,7 @@ public class AlgoArray {
         int temp = array[0];
         array[0] = array[3];
         array[3] = temp;
-        int temp = array[1];
+        temp = array[1];
         array[1] = array[2];
         array[2] = temp;
 
