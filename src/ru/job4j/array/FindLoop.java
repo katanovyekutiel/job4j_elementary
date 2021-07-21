@@ -12,6 +12,6 @@ public class FindLoop {
     }
 
     public static void main(String[] args) {
-        System.out.println(FindLoop.indexOf(int [] data, int el));
+
     }
 }
