@@ -6,15 +6,13 @@ public class FindLoop {
         for (int index = 0; index < data.length; index++) {
             if (data[index] == el) {
                 rst = index;
-                break;
-            } else {
-                return -1;
             }
         }
         return rst;
     }
 
     public static void main(String[] args) {
-
+        System.out.println(FindLoop.indexOf(int [] data, int el));
     }
+
 }
