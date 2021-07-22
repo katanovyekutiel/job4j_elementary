@@ -18,4 +18,5 @@ public class Min {
         int[] array = new int[] {10, 5, 3};
         System.out.println(Min.findMin(array));
     }
+
 }
