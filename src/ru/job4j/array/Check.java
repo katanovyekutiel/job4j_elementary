@@ -15,5 +15,4 @@ public class Check {
         boolean[] data = new boolean[] {false, true, false};
         System.out.println(Check.mono(data));
     }
-
 }
