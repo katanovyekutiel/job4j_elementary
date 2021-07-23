@@ -17,4 +17,5 @@ public class SortSelected {
         int[] data = new int[]{43, 15, 88, 3, 16, 11, 77, 54};
         System.out.println(Arrays.toString(SortSelected.sort(data)));
     }
+
 }
