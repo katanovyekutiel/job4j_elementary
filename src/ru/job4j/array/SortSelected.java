@@ -1,33 +1,20 @@
 package ru.job4j.array;
 
-public class SortSelected {
-    public static int sort(int[] data) {
-//        for (...) {
-//            int min = MinDiapason.findMin(data, 0, data.length);
-//            int index = FindLoop.indexOf(data, min, 0, data.length);
-//            /* swap(...) */
-//        }
+import java.util.Arrays;
 
-        for (int in = 0; in < data.length; in++) {
-            int min = data[in];
-            int mini = in;
-            for (int i = 1; i < data.length; i++) {
-                if (data[i] < min) {
-                    min = data[i];
-                    data[0] = min;
-                }
-                if (i != mini) {
-                    int tmp = data[i];
-                    data[i] = data[mini];
-                    data[mini] = tmp;
-                }
-            }
+public class SortSelected {
+
+    public static int[] sort(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            int min = MinDiapason.findMin(data, i, data.length - 1);
+            int index = FindLoop.indexOf(data, min, i, data.length - 1);
+            SwitchArray.swap(data, index, i);
         }
         return data;
     }
 
     public static void main(String[] args) {
-        int[] data = new int[] {3, 4, 1, 2, 5};
-        System.out.println(SortSelected.sort(data));
+        int[] data = new int[]{43, 15, 88, 3, 16, 11, 77, 54};
+        System.out.println(Arrays.toString(SortSelected.sort(data)));
     }
 }
