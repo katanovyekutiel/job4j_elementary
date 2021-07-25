@@ -25,4 +25,5 @@ public class Defragment {
             System.out.print(compressed[index] + " ");
         }
     }
+
 }
