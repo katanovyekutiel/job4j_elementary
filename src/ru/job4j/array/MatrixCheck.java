@@ -32,14 +32,31 @@ public class MatrixCheck {
         return result;
     }
 
+//    public static void main(String[] args) {
+//        char[][] input = {
+//                {' ', ' ', 'X'},
+//                {' ', ' ', 'X'},
+//                {' ', ' ', 'X'},
+//        };
+//        int column = 2;
+//        System.out.println(MatrixCheck.monoVertical(input, column));
+//    }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl;
+    }
+
     public static void main(String[] args) {
         char[][] input = {
-                {' ', ' ', 'X'},
-                {' ', ' ', 'X'},
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
                 {' ', ' ', 'X'},
         };
-        int column = 2;
-        System.out.println(MatrixCheck.monoVertical(input, column));
+        System.out.println(MatrixCheck.extractDiagonal(input));
     }
 }
 
