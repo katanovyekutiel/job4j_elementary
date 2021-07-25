@@ -12,16 +12,6 @@ public class MatrixCheck {
         return result;
     }
 
-//    public static void main(String[] args) {
-//        char[][] input = {
-//                {' ', ' ', ' '},
-//                {'X', 'X', 'X'},
-//                {' ', ' ', ' '},
-//        };
-//        int row = 0;
-//        System.out.println(MatrixCheck.monoHorizontal(input, row));
-//    }
-
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int i = 0; i < board.length; i++) {
@@ -32,16 +22,6 @@ public class MatrixCheck {
         return result;
     }
 
-//    public static void main(String[] args) {
-//        char[][] input = {
-//                {' ', ' ', 'X'},
-//                {' ', ' ', 'X'},
-//                {' ', ' ', 'X'},
-//        };
-//        int column = 2;
-//        System.out.println(MatrixCheck.monoVertical(input, column));
-//    }
-
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
         for (int i = 0; i < board.length; i++) {
@@ -50,13 +30,15 @@ public class MatrixCheck {
         return rsl;
     }
 
-    public static void main(String[] args) {
-        char[][] input = {
-                {'X', ' ', ' '},
-                {' ', 'X', ' '},
-                {' ', ' ', 'X'},
-        };
-        System.out.println(MatrixCheck.extractDiagonal(input));
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < 5; i++) {
+            if (board[i][i] == 'X' || board[i][i] == 'X') {
+                return true;
+            }
+        }
+        return result;
     }
+
 }
 
